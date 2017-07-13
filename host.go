@@ -3,12 +3,19 @@ package main
 import (
 	"flag"
 	"fmt"
+	"os"
 	"encoding/json"
 	// "github.com/golang/glog"
 	"github.com/google/cadvisor/client"
-	// info "github.com/google/cadvisor/info/v1"
-
+	info "github.com/google/cadvisor/info/v1"
+	"strings"
 )
+
+func check(e error){
+	if e != nil{
+		panic(e)
+	}
+}
 
 // type MachineInfo struct {
 // 	// The number of cores in this machine.
@@ -52,24 +59,86 @@ import (
 // 	InstanceID InstanceID `json:"instance_id"`
 // }
 
-func machine(url string){
-	stat, err := client.NewClient(url)
-	if err != nil{
-		fmt.Println("Error\n")
-	}
-	MI, err := stat.MachineInfo()
-	if err != nil{
-		fmt.Println("Error\n")
-	}
-	res, _ := json.Marshal(MI) 
-	// fmt.Println(stat.MachineInfo())
-	fmt.Println(string(res))
+// type ContainerInfo struct {
+// 	ContainerReference
+
+// 	// The direct subcontainers of the current container.
+// 	Subcontainers []ContainerReference `json:"subcontainers,omitempty"`
+
+// 	// The isolation used in the container.
+// 	Spec ContainerSpec `json:"spec,omitempty"`
+
+// 	// Historical statistics gathered from the container.
+// 	Stats []*ContainerStats `json:"stats,omitempty"`
+// }
+
+
+func host_spec(url string){
+	root, err := client.NewClient(url)
+	check(err)
+	
+	file, err := os.Create("stats/host_spec.txt")
+	check(err)
+	
+	defer file.Close()
+
+	mac_info, _ := root.MachineInfo()
+	res, _ := json.MarshalIndent(mac_info, "", "\t") 
+
+	_, _ = file.WriteString(string(res))
 }
 
+func host_stat(url string, link string, num int){
+	root, err := client.NewClient(url)
+	check(err)
+	
+	query := info.ContainerInfoRequest{
+		NumStats: num,
+	}
+
+	file, err := os.Create("stats/host_stat.txt")
+	check(err)
+	
+	defer file.Close()
+
+	mac_info, _ := root.ContainerInfo(link , &query)
+
+	cpu := "Name - " + mac_info.Name + ", Image - " + mac_info.Spec.Image +  "\n-------------------------------------------CPU-------------------------------------------\n"
+	mem := "\n\n-------------------------------------------MEMORY-------------------------------------------"
+	res, err := json.Marshal(mac_info.Spec)
+	check(err)
+
+	decode := json.NewDecoder(strings.NewReader(string(res)))
+	var spec info.ContainerSpec
+	_ = decode.Decode(&spec)
+		
+		res, _ = json.MarshalIndent(mac_info.Spec.Cpu, "", "\t\t")
+		cpu += string(res) + "\n"
+		res, _ = json.MarshalIndent(mac_info.Spec.Memory, "", "\t\t")
+		mem += string(res) + "\n"
+
+		for _, history := range mac_info.Stats {
+
+			res, _ = json.Marshal(history)
+
+			decode := json.NewDecoder(strings.NewReader(string(res)))
+			var stat info.ContainerStats
+			_ = decode.Decode(&stat)
+			
+			res, _ = json.MarshalIndent(history.Cpu, "", "\t\t")
+			cpu += history.Timestamp.String() + "\n" + string(res) + "\n"
+			res, _ = json.MarshalIndent(history.Memory, "", "\t\t")
+			mem += history.Timestamp.String() + "\n" + string(res) + "\n"
+		}
+
+	_, _ = file.WriteString(cpu)
+	_, _ = file.WriteString(mem)
+}
 
 // demonstrates how to use event clients
 func main() {
 	flag.Parse()
-	machine("http://192.168.99.14:8080/")
-
+	fmt.Println()
+	host_spec("http://192.168.99.14:8080/")
+	host_stat("http://192.168.99.14:8080/", "", 10)
 }
