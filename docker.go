@@ -4,12 +4,11 @@ import (
 	"flag"
 	"fmt"
 	"os"
-	"io"
+	// "io"
 	"encoding/json"
 	// "github.com/golang/glog"
 	"github.com/google/cadvisor/client"
 	info "github.com/google/cadvisor/info/v1"
-	"reflect"
 	"strings"
 )
 
@@ -60,66 +59,64 @@ func check(e error){
 
 
 // link - http://192.168.99.14:8080/api/v1.3/docker/
-func docker_all(url string){
-	stat, err := client.NewClient(url)
+func docker_all(url string, num int){
+	root, err := client.NewClient(url)
 	check(err)
 	
 	// Returns 60 numstats value by default
-	query := info.DefaultContainerInfoRequest()
-	containers, err := stat.AllDockerContainers(&query)
+	// query := info.DefaultContainerInfoRequest()
+	query := info.ContainerInfoRequest{
+		NumStats: num,
+	}
+	containers, err := root.AllDockerContainers(&query)
 	check(err)
 
 	file, err := os.Create("stats/docker.txt")
 	check(err)
 	defer file.Close()
-
+	cpu := ""
+	mem := ""
 	for _, container := range containers {
-		// final := "Name - " + container.Aliases
-		res, _ := json.MarshalIndent(container.Spec, "", "")
-		// for _, data := range res{
-		// 	fmt.Println(string(data))
-		// }
-		dec := json.NewDecoder(strings.NewReader(string(res)))
-		
-		var m info.ContainerSpec
-		if err := dec.Decode(&m); err == io.EOF {
-			break
-		} else if err != nil {
-			check(err)
-		}
-		fmt.Printf("%t: %t\n", m.HasCpu, m.HasMemory)
-		fmt.Println(m.Cpu.Limit)
-	
-		// fmt.Println(dec)
-
-
-		fmt.Println(reflect.TypeOf(res))
-
-		fmt.Println(string(res))
-
-		_, err := file.WriteString("Name - " + container.Aliases[0])
+		cpu += "Name - " + container.Aliases[0] + ", Image - " + container.Spec.Image +  "\n\tCPU -------------\n"
+		mem += "\tMEMORY --------------\n"
+		res, err := json.Marshal(container.Spec)
 		check(err)
-		
-		// fmt.Println(container.Aliases[0], container.Stats)
 
-		
+		decode := json.NewDecoder(strings.NewReader(string(res)))
+		var spec info.ContainerSpec
+		_ = decode.Decode(&spec)
+			
+			res, _ = json.MarshalIndent(container.Spec.Cpu, "", "\t\t")
+			cpu += string(res) + "\n"
+			res, _ = json.MarshalIndent(container.Spec.Memory, "", "\t\t")
+			mem += string(res) + "\n"
+
+
+		for _, history := range container.Stats {
+
+			res, _ = json.Marshal(history)
+
+			decode := json.NewDecoder(strings.NewReader(string(res)))
+			var stat info.ContainerStats
+			_ = decode.Decode(&stat)
+			
+			res, _ = json.MarshalIndent(history.Cpu, "", "\t\t")
+			cpu += history.Timestamp.String() + "\n" + string(res) + "\n"
+			res, _ = json.MarshalIndent(history.Memory, "", "\t\t")
+			mem += history.Timestamp.String() + "\n" + string(res) + "\n"
+		}
+		cpu += "\n"
+		fmt.Println("dsf")
 	}
-
-
-	fmt.Println(len(containers));
-	// fmt.Println(data[0].Name)	
-	// res, _ := json.Marshal(data[0]) 
-	// fmt.Println(string(res))
-	// json.Unmarshal([]byte(res), &data)
-	// fmt.Println(data)
-	
-	// fmt.Println(data)
+	_, _ = file.WriteString(cpu)
+	_, _ = file.WriteString(mem)
+		
 }
 
 
 // demonstrates how to use event clients
 func main() {
 	flag.Parse()
-	docker_all("http://192.168.99.14:8080/")
+	docker_all("http://192.168.99.14:8080/", 10)
 
 }
