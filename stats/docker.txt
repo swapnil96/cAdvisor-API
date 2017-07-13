@@ -1,21 +1,21 @@
 Name - cadvisor, Image - swapnil18/docker-arm-cadvisor:latest
-	CPU -------------
+-------------------------------------------CPU-------------------------------------------
 {
 		"limit": 1024,
 		"max_limit": 0
 }
-2017-07-13 06:41:32.608228213 +0000 UTC
+2017-07-13 07:27:24.199245351 +0000 UTC
 {
 		"usage": {
-				"total": 82580833747,
+				"total": 238410021967,
 				"per_cpu_usage": [
-						17220539316,
-						20588602775,
-						19750987013,
-						25020704643
+						49453779272,
+						60497281327,
+						60827543030,
+						67631418338
 				],
-				"user": 49490000000,
-				"system": 29940000000
+				"user": 168910000000,
+				"system": 62230000000
 		},
 		"cfs": {
 				"periods": 0,
@@ -24,18 +24,18 @@ Name - cadvisor, Image - swapnil18/docker-arm-cadvisor:latest
 		},
 		"load_average": 0
 }
-2017-07-13 06:41:33.500319323 +0000 UTC
+2017-07-13 07:27:24.936251072 +0000 UTC
 {
 		"usage": {
-				"total": 82596344215,
+				"total": 238426806188,
 				"per_cpu_usage": [
-						17220539316,
-						20588602775,
-						19755091129,
-						25032110995
+						49461347658,
+						60503263409,
+						60830776783,
+						67631418338
 				],
-				"user": 49490000000,
-				"system": 29960000000
+				"user": 168920000000,
+				"system": 62240000000
 		},
 		"cfs": {
 				"periods": 0,
@@ -44,18 +44,18 @@ Name - cadvisor, Image - swapnil18/docker-arm-cadvisor:latest
 		},
 		"load_average": 0
 }
-2017-07-13 06:41:34.329953247 +0000 UTC
+2017-07-13 07:27:25.472646068 +0000 UTC
 {
 		"usage": {
-				"total": 82606469629,
+				"total": 238434576131,
 				"per_cpu_usage": [
-						17220539316,
-						20588602775,
-						19758214877,
-						25039112661
+						49464505575,
+						60506196064,
+						60832456154,
+						67631418338
 				],
-				"user": 49490000000,
-				"system": 29970000000
+				"user": 168930000000,
+				"system": 62240000000
 		},
 		"cfs": {
 				"periods": 0,
@@ -64,18 +64,18 @@ Name - cadvisor, Image - swapnil18/docker-arm-cadvisor:latest
 		},
 		"load_average": 0
 }
-2017-07-13 06:41:34.954209336 +0000 UTC
+2017-07-13 07:27:26.412933646 +0000 UTC
 {
 		"usage": {
-				"total": 82616327704,
+				"total": 238451281811,
 				"per_cpu_usage": [
-						17220565253,
-						20588602775,
-						19762170709,
-						25044988967
+						49470476669,
+						60513651377,
+						60835735427,
+						67631418338
 				],
-				"user": 49500000000,
-				"system": 29970000000
+				"user": 168940000000,
+				"system": 62240000000
 		},
 		"cfs": {
 				"periods": 0,
@@ -84,18 +84,18 @@ Name - cadvisor, Image - swapnil18/docker-arm-cadvisor:latest
 		},
 		"load_average": 0
 }
-2017-07-13 06:41:35.739816209 +0000 UTC
+2017-07-13 07:27:27.405329324 +0000 UTC
 {
 		"usage": {
-				"total": 82624043436,
+				"total": 238481144271,
 				"per_cpu_usage": [
-						17224500722,
-						20588602775,
-						19762170709,
-						25048769230
+						49485105523,
+						60523116638,
+						60841503772,
+						67631418338
 				],
-				"user": 49500000000,
-				"system": 29970000000
+				"user": 168950000000,
+				"system": 62260000000
 		},
 		"cfs": {
 				"periods": 0,
@@ -104,18 +104,18 @@ Name - cadvisor, Image - swapnil18/docker-arm-cadvisor:latest
 		},
 		"load_average": 0
 }
-2017-07-13 06:41:36.479256872 +0000 UTC
+2017-07-13 07:27:28.142312435 +0000 UTC
 {
 		"usage": {
-				"total": 82647715579,
+				"total": 238497826820,
 				"per_cpu_usage": [
-						17231668795,
-						20588602775,
-						19762170709,
-						25065273300
+						49490939846,
+						60530711585,
+						60844757051,
+						67631418338
 				],
-				"user": 49530000000,
-				"system": 29980000000
+				"user": 168970000000,
+				"system": 62260000000
 		},
 		"cfs": {
 				"periods": 0,
@@ -124,18 +124,18 @@ Name - cadvisor, Image - swapnil18/docker-arm-cadvisor:latest
 		},
 		"load_average": 0
 }
-2017-07-13 06:41:37.196964932 +0000 UTC
+2017-07-13 07:27:28.968130814 +0000 UTC
 {
 		"usage": {
-				"total": 82655677297,
+				"total": 238514819422,
 				"per_cpu_usage": [
-						17234559316,
-						20588602775,
-						19762170709,
-						25070344497
+						49498493648,
+						60536669032,
+						60848238404,
+						67631418338
 				],
-				"user": 49540000000,
-				"system": 29990000000
+				"user": 168980000000,
+				"system": 62260000000
 		},
 		"cfs": {
 				"periods": 0,
@@ -144,18 +144,18 @@ Name - cadvisor, Image - swapnil18/docker-arm-cadvisor:latest
 		},
 		"load_average": 0
 }
-2017-07-13 06:41:37.873124023 +0000 UTC
+2017-07-13 07:27:29.778900335 +0000 UTC
 {
 		"usage": {
-				"total": 82671597771,
+				"total": 238531541876,
 				"per_cpu_usage": [
-						17241983223,
-						20588602775,
-						19762170709,
-						25078841064
+						49504474431,
+						60544220334,
+						60851428773,
+						67631418338
 				],
-				"user": 49550000000,
-				"system": 30000000000
+				"user": 168990000000,
+				"system": 62260000000
 		},
 		"cfs": {
 				"periods": 0,
@@ -164,18 +164,18 @@ Name - cadvisor, Image - swapnil18/docker-arm-cadvisor:latest
 		},
 		"load_average": 0
 }
-2017-07-13 06:41:38.519333335 +0000 UTC
+2017-07-13 07:27:30.619492566 +0000 UTC
 {
 		"usage": {
-				"total": 82692838029,
+				"total": 238557285262,
 				"per_cpu_usage": [
-						17248113536,
-						20588602775,
-						19762170709,
-						25093951009
+						49519532973,
+						60550275543,
+						60856058408,
+						67631418338
 				],
-				"user": 49550000000,
-				"system": 30020000000
+				"user": 169010000000,
+				"system": 62270000000
 		},
 		"cfs": {
 				"periods": 0,
@@ -184,18 +184,18 @@ Name - cadvisor, Image - swapnil18/docker-arm-cadvisor:latest
 		},
 		"load_average": 0
 }
-2017-07-13 06:41:39.501127676 +0000 UTC
+2017-07-13 07:27:31.320574178 +0000 UTC
 {
 		"usage": {
-				"total": 82719261164,
+				"total": 238576713701,
 				"per_cpu_usage": [
-						17263165307,
-						20588602775,
-						19762170709,
-						25105322373
+						49524667923,
+						60560834553,
+						60859792887,
+						67631418338
 				],
-				"user": 49600000000,
-				"system": 30020000000
+				"user": 169020000000,
+				"system": 62270000000
 		},
 		"cfs": {
 				"periods": 0,
@@ -206,12 +206,12 @@ Name - cadvisor, Image - swapnil18/docker-arm-cadvisor:latest
 }
 
 Name - optimistic_johnson, Image - arm32v6/alpine
-	CPU -------------
+-------------------------------------------CPU-------------------------------------------
 {
 		"limit": 1024,
 		"max_limit": 0
 }
-2017-07-13 06:40:43.606228976 +0000 UTC
+2017-07-13 07:26:34.682980429 +0000 UTC
 {
 		"usage": {
 				"total": 28166404,
@@ -231,7 +231,7 @@ Name - optimistic_johnson, Image - arm32v6/alpine
 		},
 		"load_average": 0
 }
-2017-07-13 06:40:45.08707474 +0000 UTC
+2017-07-13 07:26:35.966496443 +0000 UTC
 {
 		"usage": {
 				"total": 28166404,
@@ -251,7 +251,7 @@ Name - optimistic_johnson, Image - arm32v6/alpine
 		},
 		"load_average": 0
 }
-2017-07-13 06:40:47.915292935 +0000 UTC
+2017-07-13 07:26:38.619054166 +0000 UTC
 {
 		"usage": {
 				"total": 28166404,
@@ -271,7 +271,7 @@ Name - optimistic_johnson, Image - arm32v6/alpine
 		},
 		"load_average": 0
 }
-2017-07-13 06:40:53.9008856 +0000 UTC
+2017-07-13 07:26:46.326004501 +0000 UTC
 {
 		"usage": {
 				"total": 28166404,
@@ -291,7 +291,7 @@ Name - optimistic_johnson, Image - arm32v6/alpine
 		},
 		"load_average": 0
 }
-2017-07-13 06:41:06.576708861 +0000 UTC
+2017-07-13 07:26:58.027802427 +0000 UTC
 {
 		"usage": {
 				"total": 28166404,
@@ -311,7 +311,7 @@ Name - optimistic_johnson, Image - arm32v6/alpine
 		},
 		"load_average": 0
 }
-2017-07-13 06:41:07.386304885 +0000 UTC
+2017-07-13 07:26:58.974058649 +0000 UTC
 {
 		"usage": {
 				"total": 28166404,
@@ -331,7 +331,7 @@ Name - optimistic_johnson, Image - arm32v6/alpine
 		},
 		"load_average": 0
 }
-2017-07-13 06:41:08.826283994 +0000 UTC
+2017-07-13 07:27:00.58204818 +0000 UTC
 {
 		"usage": {
 				"total": 28166404,
@@ -351,7 +351,7 @@ Name - optimistic_johnson, Image - arm32v6/alpine
 		},
 		"load_average": 0
 }
-2017-07-13 06:41:11.937149951 +0000 UTC
+2017-07-13 07:27:02.621184336 +0000 UTC
 {
 		"usage": {
 				"total": 28166404,
@@ -371,7 +371,7 @@ Name - optimistic_johnson, Image - arm32v6/alpine
 		},
 		"load_average": 0
 }
-2017-07-13 06:41:18.546500421 +0000 UTC
+2017-07-13 07:27:06.655878322 +0000 UTC
 {
 		"usage": {
 				"total": 28166404,
@@ -391,7 +391,7 @@ Name - optimistic_johnson, Image - arm32v6/alpine
 		},
 		"load_average": 0
 }
-2017-07-13 06:41:33.744982952 +0000 UTC
+2017-07-13 07:27:21.83778218 +0000 UTC
 {
 		"usage": {
 				"total": 28166404,
@@ -412,187 +412,185 @@ Name - optimistic_johnson, Image - arm32v6/alpine
 		"load_average": 0
 }
 
-	MEMORY --------------
-{
+-------------------------------------------MEMORY-------------------------------------------{
 		"limit": 8796093018112,
 		"reservation": 8796093018112
 }
-2017-07-13 06:41:32.608228213 +0000 UTC
+2017-07-13 07:27:24.199245351 +0000 UTC
 {
-		"usage": 22528000,
+		"usage": 29712384,
 		"cache": 12288,
-		"rss": 22294528,
+		"rss": 29425664,
 		"swap": 0,
-		"working_set": 22528000,
+		"working_set": 29712384,
 		"failcnt": 0,
 		"container_data": {
-				"pgfault": 36787,
+				"pgfault": 301216,
 				"pgmajfault": 0
 		},
 		"hierarchical_data": {
-				"pgfault": 36787,
+				"pgfault": 301216,
 				"pgmajfault": 0
 		}
 }
-2017-07-13 06:41:33.500319323 +0000 UTC
+2017-07-13 07:27:24.936251072 +0000 UTC
 {
-		"usage": 22528000,
+		"usage": 29712384,
 		"cache": 12288,
-		"rss": 22294528,
+		"rss": 29425664,
 		"swap": 0,
-		"working_set": 22528000,
+		"working_set": 29712384,
 		"failcnt": 0,
 		"container_data": {
-				"pgfault": 36796,
+				"pgfault": 301218,
 				"pgmajfault": 0
 		},
 		"hierarchical_data": {
-				"pgfault": 36796,
+				"pgfault": 301218,
 				"pgmajfault": 0
 		}
 }
-2017-07-13 06:41:34.329953247 +0000 UTC
+2017-07-13 07:27:25.472646068 +0000 UTC
 {
-		"usage": 22528000,
+		"usage": 29712384,
 		"cache": 12288,
-		"rss": 22294528,
+		"rss": 29425664,
 		"swap": 0,
-		"working_set": 22528000,
+		"working_set": 29712384,
 		"failcnt": 0,
 		"container_data": {
-				"pgfault": 36807,
+				"pgfault": 301219,
 				"pgmajfault": 0
 		},
 		"hierarchical_data": {
-				"pgfault": 36807,
+				"pgfault": 301219,
 				"pgmajfault": 0
 		}
 }
-2017-07-13 06:41:34.954209336 +0000 UTC
+2017-07-13 07:27:26.412933646 +0000 UTC
 {
-		"usage": 22528000,
+		"usage": 29712384,
 		"cache": 12288,
-		"rss": 22294528,
+		"rss": 29425664,
 		"swap": 0,
-		"working_set": 22528000,
+		"working_set": 29712384,
 		"failcnt": 0,
 		"container_data": {
-				"pgfault": 36814,
+				"pgfault": 301228,
 				"pgmajfault": 0
 		},
 		"hierarchical_data": {
-				"pgfault": 36814,
+				"pgfault": 301228,
 				"pgmajfault": 0
 		}
 }
-2017-07-13 06:41:35.739816209 +0000 UTC
+2017-07-13 07:27:27.405329324 +0000 UTC
 {
-		"usage": 22528000,
+		"usage": 29712384,
 		"cache": 12288,
-		"rss": 22294528,
+		"rss": 29425664,
 		"swap": 0,
-		"working_set": 22528000,
+		"working_set": 29712384,
 		"failcnt": 0,
 		"container_data": {
-				"pgfault": 36817,
+				"pgfault": 301241,
 				"pgmajfault": 0
 		},
 		"hierarchical_data": {
-				"pgfault": 36817,
+				"pgfault": 301241,
 				"pgmajfault": 0
 		}
 }
-2017-07-13 06:41:36.479256872 +0000 UTC
+2017-07-13 07:27:28.142312435 +0000 UTC
 {
-		"usage": 22528000,
+		"usage": 29712384,
 		"cache": 12288,
-		"rss": 22294528,
+		"rss": 29425664,
 		"swap": 0,
-		"working_set": 22528000,
+		"working_set": 29712384,
 		"failcnt": 0,
 		"container_data": {
-				"pgfault": 36836,
+				"pgfault": 301249,
 				"pgmajfault": 0
 		},
 		"hierarchical_data": {
-				"pgfault": 36836,
+				"pgfault": 301249,
 				"pgmajfault": 0
 		}
 }
-2017-07-13 06:41:37.196964932 +0000 UTC
+2017-07-13 07:27:28.968130814 +0000 UTC
 {
-		"usage": 22528000,
+		"usage": 29712384,
 		"cache": 12288,
-		"rss": 22294528,
+		"rss": 29425664,
 		"swap": 0,
-		"working_set": 22528000,
+		"working_set": 29712384,
 		"failcnt": 0,
 		"container_data": {
-				"pgfault": 36839,
+				"pgfault": 301255,
 				"pgmajfault": 0
 		},
 		"hierarchical_data": {
-				"pgfault": 36839,
+				"pgfault": 301255,
 				"pgmajfault": 0
 		}
 }
-2017-07-13 06:41:37.873124023 +0000 UTC
+2017-07-13 07:27:29.778900335 +0000 UTC
 {
-		"usage": 22528000,
+		"usage": 29712384,
 		"cache": 12288,
-		"rss": 22294528,
+		"rss": 29425664,
 		"swap": 0,
-		"working_set": 22528000,
+		"working_set": 29712384,
 		"failcnt": 0,
 		"container_data": {
-				"pgfault": 36846,
+				"pgfault": 301264,
 				"pgmajfault": 0
 		},
 		"hierarchical_data": {
-				"pgfault": 36846,
+				"pgfault": 301264,
 				"pgmajfault": 0
 		}
 }
-2017-07-13 06:41:38.519333335 +0000 UTC
+2017-07-13 07:27:30.619492566 +0000 UTC
 {
-		"usage": 22528000,
+		"usage": 29712384,
 		"cache": 12288,
-		"rss": 22294528,
+		"rss": 29425664,
 		"swap": 0,
-		"working_set": 22528000,
+		"working_set": 29712384,
 		"failcnt": 0,
 		"container_data": {
-				"pgfault": 36855,
+				"pgfault": 301279,
 				"pgmajfault": 0
 		},
 		"hierarchical_data": {
-				"pgfault": 36855,
+				"pgfault": 301279,
 				"pgmajfault": 0
 		}
 }
-2017-07-13 06:41:39.501127676 +0000 UTC
+2017-07-13 07:27:31.320574178 +0000 UTC
 {
-		"usage": 22528000,
+		"usage": 29712384,
 		"cache": 12288,
-		"rss": 22294528,
+		"rss": 29425664,
 		"swap": 0,
-		"working_set": 22528000,
+		"working_set": 29712384,
 		"failcnt": 0,
 		"container_data": {
-				"pgfault": 36864,
+				"pgfault": 301291,
 				"pgmajfault": 0
 		},
 		"hierarchical_data": {
-				"pgfault": 36864,
+				"pgfault": 301291,
 				"pgmajfault": 0
 		}
 }
-	MEMORY --------------
-{
+-------------------------------------------MEMORY-------------------------------------------{
 		"limit": 8796093018112,
 		"reservation": 8796093018112
 }
-2017-07-13 06:40:43.606228976 +0000 UTC
+2017-07-13 07:26:34.682980429 +0000 UTC
 {
 		"usage": 45056,
 		"cache": 0,
@@ -609,7 +607,7 @@ Name - optimistic_johnson, Image - arm32v6/alpine
 				"pgmajfault": 0
 		}
 }
-2017-07-13 06:40:45.08707474 +0000 UTC
+2017-07-13 07:26:35.966496443 +0000 UTC
 {
 		"usage": 45056,
 		"cache": 0,
@@ -626,7 +624,7 @@ Name - optimistic_johnson, Image - arm32v6/alpine
 				"pgmajfault": 0
 		}
 }
-2017-07-13 06:40:47.915292935 +0000 UTC
+2017-07-13 07:26:38.619054166 +0000 UTC
 {
 		"usage": 45056,
 		"cache": 0,
@@ -643,7 +641,7 @@ Name - optimistic_johnson, Image - arm32v6/alpine
 				"pgmajfault": 0
 		}
 }
-2017-07-13 06:40:53.9008856 +0000 UTC
+2017-07-13 07:26:46.326004501 +0000 UTC
 {
 		"usage": 45056,
 		"cache": 0,
@@ -660,7 +658,7 @@ Name - optimistic_johnson, Image - arm32v6/alpine
 				"pgmajfault": 0
 		}
 }
-2017-07-13 06:41:06.576708861 +0000 UTC
+2017-07-13 07:26:58.027802427 +0000 UTC
 {
 		"usage": 45056,
 		"cache": 0,
@@ -677,7 +675,7 @@ Name - optimistic_johnson, Image - arm32v6/alpine
 				"pgmajfault": 0
 		}
 }
-2017-07-13 06:41:07.386304885 +0000 UTC
+2017-07-13 07:26:58.974058649 +0000 UTC
 {
 		"usage": 45056,
 		"cache": 0,
@@ -694,7 +692,7 @@ Name - optimistic_johnson, Image - arm32v6/alpine
 				"pgmajfault": 0
 		}
 }
-2017-07-13 06:41:08.826283994 +0000 UTC
+2017-07-13 07:27:00.58204818 +0000 UTC
 {
 		"usage": 45056,
 		"cache": 0,
@@ -711,7 +709,7 @@ Name - optimistic_johnson, Image - arm32v6/alpine
 				"pgmajfault": 0
 		}
 }
-2017-07-13 06:41:11.937149951 +0000 UTC
+2017-07-13 07:27:02.621184336 +0000 UTC
 {
 		"usage": 45056,
 		"cache": 0,
@@ -728,7 +726,7 @@ Name - optimistic_johnson, Image - arm32v6/alpine
 				"pgmajfault": 0
 		}
 }
-2017-07-13 06:41:18.546500421 +0000 UTC
+2017-07-13 07:27:06.655878322 +0000 UTC
 {
 		"usage": 45056,
 		"cache": 0,
@@ -745,7 +743,7 @@ Name - optimistic_johnson, Image - arm32v6/alpine
 				"pgmajfault": 0
 		}
 }
-2017-07-13 06:41:33.744982952 +0000 UTC
+2017-07-13 07:27:21.83778218 +0000 UTC
 {
 		"usage": 45056,
 		"cache": 0,

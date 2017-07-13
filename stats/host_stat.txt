@@ -1,0 +1,383 @@
+Name - /, Image - 
+-------------------------------------------CPU-------------------------------------------
+{
+		"limit": 1024,
+		"max_limit": 0
+}
+2017-07-13 08:41:15.360171234 +0000 UTC
+{
+		"usage": {
+				"total": 1654207661538,
+				"per_cpu_usage": [
+						396112607052,
+						413841679991,
+						426868090442,
+						417385284053
+				],
+				"user": 946300000000,
+				"system": 442960000000
+		},
+		"cfs": {
+				"periods": 0,
+				"throttled_periods": 0,
+				"throttled_time": 0
+		},
+		"load_average": 0
+}
+2017-07-13 08:41:16.028213105 +0000 UTC
+{
+		"usage": {
+				"total": 1654233455870,
+				"per_cpu_usage": [
+						396112964499,
+						413846924108,
+						426883188415,
+						417390378848
+				],
+				"user": 946300000000,
+				"system": 442980000000
+		},
+		"cfs": {
+				"periods": 0,
+				"throttled_periods": 0,
+				"throttled_time": 0
+		},
+		"load_average": 0
+}
+2017-07-13 08:41:16.89150152 +0000 UTC
+{
+		"usage": {
+				"total": 1654265640766,
+				"per_cpu_usage": [
+						396113210436,
+						413859603793,
+						426898933628,
+						417393892909
+				],
+				"user": 946300000000,
+				"system": 443000000000
+		},
+		"cfs": {
+				"periods": 0,
+				"throttled_periods": 0,
+				"throttled_time": 0
+		},
+		"load_average": 0
+}
+2017-07-13 08:41:17.67884409 +0000 UTC
+{
+		"usage": {
+				"total": 1654333983382,
+				"per_cpu_usage": [
+						396113574081,
+						413876794262,
+						426930563847,
+						417413051192
+				],
+				"user": 946360000000,
+				"system": 443000000000
+		},
+		"cfs": {
+				"periods": 0,
+				"throttled_periods": 0,
+				"throttled_time": 0
+		},
+		"load_average": 0
+}
+2017-07-13 08:41:18.394445862 +0000 UTC
+{
+		"usage": {
+				"total": 1654620518121,
+				"per_cpu_usage": [
+						396113949497,
+						413946484624,
+						427034442853,
+						417525641147
+				],
+				"user": 946590000000,
+				"system": 443020000000
+		},
+		"cfs": {
+				"periods": 0,
+				"throttled_periods": 0,
+				"throttled_time": 0
+		},
+		"load_average": 0
+}
+2017-07-13 08:41:19.012362825 +0000 UTC
+{
+		"usage": {
+				"total": 1654634601503,
+				"per_cpu_usage": [
+						396114309965,
+						413950759988,
+						427039158530,
+						417530373020
+				],
+				"user": 946590000000,
+				"system": 443020000000
+		},
+		"cfs": {
+				"periods": 0,
+				"throttled_periods": 0,
+				"throttled_time": 0
+		},
+		"load_average": 0
+}
+2017-07-13 08:41:19.676270477 +0000 UTC
+{
+		"usage": {
+				"total": 1654651010200,
+				"per_cpu_usage": [
+						396114401006,
+						413951252802,
+						427046512224,
+						417538844168
+				],
+				"user": 946590000000,
+				"system": 443020000000
+		},
+		"cfs": {
+				"periods": 0,
+				"throttled_periods": 0,
+				"throttled_time": 0
+		},
+		"load_average": 0
+}
+2017-07-13 08:41:20.287230366 +0000 UTC
+{
+		"usage": {
+				"total": 1654668778649,
+				"per_cpu_usage": [
+						396114673611,
+						413953293636,
+						427050153328,
+						417550658074
+				],
+				"user": 946590000000,
+				"system": 443020000000
+		},
+		"cfs": {
+				"periods": 0,
+				"throttled_periods": 0,
+				"throttled_time": 0
+		},
+		"load_average": 0
+}
+2017-07-13 08:41:20.832478093 +0000 UTC
+{
+		"usage": {
+				"total": 1654683354838,
+				"per_cpu_usage": [
+						396114707674,
+						413957528686,
+						427054616086,
+						417556502392
+				],
+				"user": 946590000000,
+				"system": 443020000000
+		},
+		"cfs": {
+				"periods": 0,
+				"throttled_periods": 0,
+				"throttled_time": 0
+		},
+		"load_average": 0
+}
+2017-07-13 08:41:21.765237084 +0000 UTC
+{
+		"usage": {
+				"total": 1654702927852,
+				"per_cpu_usage": [
+						396115029602,
+						413964578166,
+						427060259467,
+						417563060617
+				],
+				"user": 946590000000,
+				"system": 443030000000
+		},
+		"cfs": {
+				"periods": 0,
+				"throttled_periods": 0,
+				"throttled_time": 0
+		},
+		"load_average": 0
+}
+
+
+-------------------------------------------MEMORY-------------------------------------------{
+		"limit": 970477568,
+		"reservation": 8796093018112,
+		"swap_limit": 104853504
+}
+2017-07-13 08:41:15.360171234 +0000 UTC
+{
+		"usage": 428781568,
+		"cache": 281219072,
+		"rss": 106242048,
+		"swap": 0,
+		"working_set": 287281152,
+		"failcnt": 0,
+		"container_data": {
+				"pgfault": 4032639,
+				"pgmajfault": 1850
+		},
+		"hierarchical_data": {
+				"pgfault": 4032639,
+				"pgmajfault": 1850
+		}
+}
+2017-07-13 08:41:16.028213105 +0000 UTC
+{
+		"usage": 428781568,
+		"cache": 281219072,
+		"rss": 106242048,
+		"swap": 0,
+		"working_set": 287281152,
+		"failcnt": 0,
+		"container_data": {
+				"pgfault": 4032648,
+				"pgmajfault": 1850
+		},
+		"hierarchical_data": {
+				"pgfault": 4032648,
+				"pgmajfault": 1850
+		}
+}
+2017-07-13 08:41:16.89150152 +0000 UTC
+{
+		"usage": 428781568,
+		"cache": 281219072,
+		"rss": 106242048,
+		"swap": 0,
+		"working_set": 287281152,
+		"failcnt": 0,
+		"container_data": {
+				"pgfault": 4032738,
+				"pgmajfault": 1850
+		},
+		"hierarchical_data": {
+				"pgfault": 4032738,
+				"pgmajfault": 1850
+		}
+}
+2017-07-13 08:41:17.67884409 +0000 UTC
+{
+		"usage": 428781568,
+		"cache": 281219072,
+		"rss": 106242048,
+		"swap": 0,
+		"working_set": 287281152,
+		"failcnt": 0,
+		"container_data": {
+				"pgfault": 4032802,
+				"pgmajfault": 1850
+		},
+		"hierarchical_data": {
+				"pgfault": 4032802,
+				"pgmajfault": 1850
+		}
+}
+2017-07-13 08:41:18.394445862 +0000 UTC
+{
+		"usage": 428781568,
+		"cache": 281219072,
+		"rss": 106242048,
+		"swap": 0,
+		"working_set": 287281152,
+		"failcnt": 0,
+		"container_data": {
+				"pgfault": 4033144,
+				"pgmajfault": 1850
+		},
+		"hierarchical_data": {
+				"pgfault": 4033144,
+				"pgmajfault": 1850
+		}
+}
+2017-07-13 08:41:19.012362825 +0000 UTC
+{
+		"usage": 428781568,
+		"cache": 281219072,
+		"rss": 106242048,
+		"swap": 0,
+		"working_set": 287281152,
+		"failcnt": 0,
+		"container_data": {
+				"pgfault": 4033154,
+				"pgmajfault": 1850
+		},
+		"hierarchical_data": {
+				"pgfault": 4033154,
+				"pgmajfault": 1850
+		}
+}
+2017-07-13 08:41:19.676270477 +0000 UTC
+{
+		"usage": 428781568,
+		"cache": 281219072,
+		"rss": 106242048,
+		"swap": 0,
+		"working_set": 287281152,
+		"failcnt": 0,
+		"container_data": {
+				"pgfault": 4033260,
+				"pgmajfault": 1850
+		},
+		"hierarchical_data": {
+				"pgfault": 4033260,
+				"pgmajfault": 1850
+		}
+}
+2017-07-13 08:41:20.287230366 +0000 UTC
+{
+		"usage": 428781568,
+		"cache": 281219072,
+		"rss": 106242048,
+		"swap": 0,
+		"working_set": 287281152,
+		"failcnt": 0,
+		"container_data": {
+				"pgfault": 4033355,
+				"pgmajfault": 1850
+		},
+		"hierarchical_data": {
+				"pgfault": 4033355,
+				"pgmajfault": 1850
+		}
+}
+2017-07-13 08:41:20.832478093 +0000 UTC
+{
+		"usage": 428781568,
+		"cache": 281219072,
+		"rss": 106242048,
+		"swap": 0,
+		"working_set": 287281152,
+		"failcnt": 0,
+		"container_data": {
+				"pgfault": 4033368,
+				"pgmajfault": 1850
+		},
+		"hierarchical_data": {
+				"pgfault": 4033368,
+				"pgmajfault": 1850
+		}
+}
+2017-07-13 08:41:21.765237084 +0000 UTC
+{
+		"usage": 428781568,
+		"cache": 281219072,
+		"rss": 106242048,
+		"swap": 0,
+		"working_set": 287281152,
+		"failcnt": 0,
+		"container_data": {
+				"pgfault": 4033458,
+				"pgmajfault": 1850
+		},
+		"hierarchical_data": {
+				"pgfault": 4033458,
+				"pgmajfault": 1850
+		}
+}
