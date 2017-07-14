@@ -1,0 +1,400 @@
+
+
+Name - cadvisor, Image - swapnil18/docker-arm-cadvisor:latest
+-------------------------------------------CPU-------------------------------------------
+{
+		"limit": 1024,
+		"max_limit": 0
+}
+2017-07-14 09:18:40.720639986 +0000 UTC
+{
+		"usage": {
+				"total": 566428891460,
+				"per_cpu_usage": [
+						141547450165,
+						144277155291,
+						141833635736,
+						138770650268
+				],
+				"user": 402610000000,
+				"system": 145970000000
+		},
+		"cfs": {
+				"periods": 0,
+				"throttled_periods": 0,
+				"throttled_time": 0
+		},
+		"load_average": 0
+}
+2017-07-14 09:18:41.35765334 +0000 UTC
+{
+		"usage": {
+				"total": 566444986145,
+				"per_cpu_usage": [
+						141549800476,
+						144277155291,
+						141847380110,
+						138770650268
+				],
+				"user": 402620000000,
+				"system": 145980000000
+		},
+		"cfs": {
+				"periods": 0,
+				"throttled_periods": 0,
+				"throttled_time": 0
+		},
+		"load_average": 0
+}
+2017-07-14 09:18:42.221190547 +0000 UTC
+{
+		"usage": {
+				"total": 566461817645,
+				"per_cpu_usage": [
+						141559783600,
+						144277155291,
+						141854228486,
+						138770650268
+				],
+				"user": 402620000000,
+				"system": 145980000000
+		},
+		"cfs": {
+				"periods": 0,
+				"throttled_periods": 0,
+				"throttled_time": 0
+		},
+		"load_average": 0
+}
+2017-07-14 09:18:43.107847659 +0000 UTC
+{
+		"usage": {
+				"total": 566481036031,
+				"per_cpu_usage": [
+						141563634695,
+						144277155291,
+						141869595777,
+						138770650268
+				],
+				"user": 402630000000,
+				"system": 146000000000
+		},
+		"cfs": {
+				"periods": 0,
+				"throttled_periods": 0,
+				"throttled_time": 0
+		},
+		"load_average": 0
+}
+2017-07-14 09:18:43.919338191 +0000 UTC
+{
+		"usage": {
+				"total": 566596462801,
+				"per_cpu_usage": [
+						141592660163,
+						144302307634,
+						141905120465,
+						138796374539
+				],
+				"user": 402730000000,
+				"system": 146020000000
+		},
+		"cfs": {
+				"periods": 0,
+				"throttled_periods": 0,
+				"throttled_time": 0
+		},
+		"load_average": 0
+}
+
+
+-------------------------------------------MEMORY-------------------------------------------
+{
+		"limit": 8796093018112,
+		"reservation": 8796093018112
+}
+2017-07-14 09:18:40.720639986 +0000 UTC
+{
+		"usage": 25407488,
+		"cache": 299008,
+		"rss": 24805376,
+		"swap": 0,
+		"working_set": 25194496,
+		"failcnt": 0,
+		"container_data": {
+				"pgfault": 869289,
+				"pgmajfault": 3
+		},
+		"hierarchical_data": {
+				"pgfault": 869289,
+				"pgmajfault": 3
+		}
+}
+2017-07-14 09:18:41.35765334 +0000 UTC
+{
+		"usage": 25407488,
+		"cache": 299008,
+		"rss": 24805376,
+		"swap": 0,
+		"working_set": 25194496,
+		"failcnt": 0,
+		"container_data": {
+				"pgfault": 869318,
+				"pgmajfault": 3
+		},
+		"hierarchical_data": {
+				"pgfault": 869318,
+				"pgmajfault": 3
+		}
+}
+2017-07-14 09:18:42.221190547 +0000 UTC
+{
+		"usage": 25407488,
+		"cache": 299008,
+		"rss": 24805376,
+		"swap": 0,
+		"working_set": 25194496,
+		"failcnt": 0,
+		"container_data": {
+				"pgfault": 869367,
+				"pgmajfault": 3
+		},
+		"hierarchical_data": {
+				"pgfault": 869367,
+				"pgmajfault": 3
+		}
+}
+2017-07-14 09:18:43.107847659 +0000 UTC
+{
+		"usage": 25407488,
+		"cache": 299008,
+		"rss": 24805376,
+		"swap": 0,
+		"working_set": 25194496,
+		"failcnt": 0,
+		"container_data": {
+				"pgfault": 869436,
+				"pgmajfault": 3
+		},
+		"hierarchical_data": {
+				"pgfault": 869436,
+				"pgmajfault": 3
+		}
+}
+2017-07-14 09:18:43.919338191 +0000 UTC
+{
+		"usage": 25407488,
+		"cache": 299008,
+		"rss": 24805376,
+		"swap": 0,
+		"working_set": 25194496,
+		"failcnt": 0,
+		"container_data": {
+				"pgfault": 869519,
+				"pgmajfault": 3
+		},
+		"hierarchical_data": {
+				"pgfault": 869519,
+				"pgmajfault": 3
+		}
+}
+
+
+Name - optimistic_johnson, Image - arm32v6/alpine
+-------------------------------------------CPU-------------------------------------------
+{
+		"limit": 1024,
+		"max_limit": 0
+}
+2017-07-14 09:18:20.360152865 +0000 UTC
+{
+		"usage": {
+				"total": 61885673,
+				"per_cpu_usage": [
+						20803282,
+						17019112,
+						19644115,
+						4419164
+				],
+				"user": 30000000,
+				"system": 10000000
+		},
+		"cfs": {
+				"periods": 0,
+				"throttled_periods": 0,
+				"throttled_time": 0
+		},
+		"load_average": 0
+}
+2017-07-14 09:18:21.477649608 +0000 UTC
+{
+		"usage": {
+				"total": 61885673,
+				"per_cpu_usage": [
+						20803282,
+						17019112,
+						19644115,
+						4419164
+				],
+				"user": 30000000,
+				"system": 10000000
+		},
+		"cfs": {
+				"periods": 0,
+				"throttled_periods": 0,
+				"throttled_time": 0
+		},
+		"load_average": 0
+}
+2017-07-14 09:18:24.747046965 +0000 UTC
+{
+		"usage": {
+				"total": 61885673,
+				"per_cpu_usage": [
+						20803282,
+						17019112,
+						19644115,
+						4419164
+				],
+				"user": 30000000,
+				"system": 10000000
+		},
+		"cfs": {
+				"periods": 0,
+				"throttled_periods": 0,
+				"throttled_time": 0
+		},
+		"load_average": 0
+}
+2017-07-14 09:18:30.293764651 +0000 UTC
+{
+		"usage": {
+				"total": 61885673,
+				"per_cpu_usage": [
+						20803282,
+						17019112,
+						19644115,
+						4419164
+				],
+				"user": 30000000,
+				"system": 10000000
+		},
+		"cfs": {
+				"periods": 0,
+				"throttled_periods": 0,
+				"throttled_time": 0
+		},
+		"load_average": 0
+}
+2017-07-14 09:18:39.580006988 +0000 UTC
+{
+		"usage": {
+				"total": 61885673,
+				"per_cpu_usage": [
+						20803282,
+						17019112,
+						19644115,
+						4419164
+				],
+				"user": 30000000,
+				"system": 10000000
+		},
+		"cfs": {
+				"periods": 0,
+				"throttled_periods": 0,
+				"throttled_time": 0
+		},
+		"load_average": 0
+}
+
+
+-------------------------------------------MEMORY-------------------------------------------
+{
+		"limit": 8796093018112,
+		"reservation": 8796093018112
+}
+2017-07-14 09:18:20.360152865 +0000 UTC
+{
+		"usage": 245760,
+		"cache": 200704,
+		"rss": 45056,
+		"swap": 0,
+		"working_set": 57344,
+		"failcnt": 0,
+		"container_data": {
+				"pgfault": 271,
+				"pgmajfault": 2
+		},
+		"hierarchical_data": {
+				"pgfault": 271,
+				"pgmajfault": 2
+		}
+}
+2017-07-14 09:18:21.477649608 +0000 UTC
+{
+		"usage": 245760,
+		"cache": 200704,
+		"rss": 45056,
+		"swap": 0,
+		"working_set": 57344,
+		"failcnt": 0,
+		"container_data": {
+				"pgfault": 271,
+				"pgmajfault": 2
+		},
+		"hierarchical_data": {
+				"pgfault": 271,
+				"pgmajfault": 2
+		}
+}
+2017-07-14 09:18:24.747046965 +0000 UTC
+{
+		"usage": 245760,
+		"cache": 200704,
+		"rss": 45056,
+		"swap": 0,
+		"working_set": 57344,
+		"failcnt": 0,
+		"container_data": {
+				"pgfault": 271,
+				"pgmajfault": 2
+		},
+		"hierarchical_data": {
+				"pgfault": 271,
+				"pgmajfault": 2
+		}
+}
+2017-07-14 09:18:30.293764651 +0000 UTC
+{
+		"usage": 245760,
+		"cache": 200704,
+		"rss": 45056,
+		"swap": 0,
+		"working_set": 57344,
+		"failcnt": 0,
+		"container_data": {
+				"pgfault": 271,
+				"pgmajfault": 2
+		},
+		"hierarchical_data": {
+				"pgfault": 271,
+				"pgmajfault": 2
+		}
+}
+2017-07-14 09:18:39.580006988 +0000 UTC
+{
+		"usage": 245760,
+		"cache": 200704,
+		"rss": 45056,
+		"swap": 0,
+		"working_set": 57344,
+		"failcnt": 0,
+		"container_data": {
+				"pgfault": 271,
+				"pgmajfault": 2
+		},
+		"hierarchical_data": {
+				"pgfault": 271,
+				"pgmajfault": 2
+		}
+}

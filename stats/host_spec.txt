@@ -2,10 +2,17 @@
 	"num_cores": 4,
 	"cpu_frequency_khz": 0,
 	"memory_capacity": 970477568,
-	"machine_id": "ad6562ef0c8e4158b65653f27042ad2a",
+	"machine_id": "9069fc856fb547e9ac8d8d0c9ca13554",
 	"system_uuid": "",
-	"boot_id": "729ff56a-37a4-44d7-80e6-36390fa8f6f2",
+	"boot_id": "46370d7d-0be5-4d2e-a816-ed4cbd835cd4",
 	"filesystems": [
+		{
+			"device": "tmpfs",
+			"capacity": 485236736,
+			"type": "vfs",
+			"inodes": 118466,
+			"has_inodes": true
+		},
 		{
 			"device": "/dev/root",
 			"capacity": 29669044224,
@@ -32,13 +39,6 @@
 			"capacity": 29669044224,
 			"type": "vfs",
 			"inodes": 1851392,
-			"has_inodes": true
-		},
-		{
-			"device": "tmpfs",
-			"capacity": 485236736,
-			"type": "vfs",
-			"inodes": 118466,
 			"has_inodes": true
 		}
 	],
