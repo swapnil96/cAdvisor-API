@@ -1,8 +1,6 @@
 package utils
 
 import (
-	// "flag"
-	// "fmt"
 	"os"
 	"encoding/json"
 	// "github.com/golang/glog"
@@ -11,12 +9,7 @@ import (
 	"strconv"
 )
 
-func check(e error){
-	if e != nil{
-		panic(e)
-	}
-}
-
+// Some structs that are giving the metrics
 // -------------------------------------------------------------------------------------------------------------------------------------------
 // type MachineInfo struct {
 // 	// The number of cores in this machine.
@@ -179,13 +172,27 @@ func check(e error){
 // 	System uint64 `json:"system"`
 // }
 
+func check_error(e error){
+	if e != nil{
+		panic(e)
+	}
+}
+
+func check_dir(){
+
+	if _, err := os.Stat("stats"); os.IsNotExist(err) {
+    	os.Mkdir("stats", 0777)
+	}
+
+}
 
 func Host_spec(url string){
 	root, err := client.NewClient(url)
-	check(err)
+	check_error(err)
 	
+	check_dir()
 	file, err := os.Create("stats/host_spec.txt")
-	check(err)
+	check_error(err)
 	
 	defer file.Close()
 
@@ -197,14 +204,15 @@ func Host_spec(url string){
 
 func Host_stat(url string, link string, num int){
 	root, err := client.NewClient(url)
-	check(err)
+	check_error(err)
 	
 	query := info.ContainerInfoRequest{
 		NumStats: num,
 	}
 
+	check_dir()
 	file, err := os.Create("stats/host_stat.txt")
-	check(err)
+	check_error(err)
 	defer file.Close()
 
 	mac_info, _ := root.ContainerInfo(link , &query)
@@ -230,14 +238,15 @@ func Host_stat(url string, link string, num int){
 
 func Host_cpu(url string, link string, num int){
 	root, err := client.NewClient(url)
-	check(err)
+	check_error(err)
 	
 	query := info.ContainerInfoRequest{
 		NumStats: num,
 	}
 
+	check_dir()
 	file, err := os.Create("stats/host_cpu.dat")
-	check(err)
+	check_error(err)
 	defer file.Close()
 
 	mac_info, _ := root.ContainerInfo(link , &query)
@@ -271,14 +280,15 @@ func Host_cpu(url string, link string, num int){
 
 func Host_memory(url string, link string, num int){
 	root, err := client.NewClient(url)
-	check(err)
+	check_error(err)
 	
 	query := info.ContainerInfoRequest{
 		NumStats: num,
 	}
 
+	check_dir()
 	file, err := os.Create("stats/host_memory.dat")
-	check(err)
+	check_error(err)
 	defer file.Close()
 
 	mac_info, _ := root.ContainerInfo(link , &query)

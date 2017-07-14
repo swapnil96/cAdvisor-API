@@ -1,8 +1,6 @@
 package utils
 
 import (
-	// "flag"
-	// "fmt"
 	"os"
 	"encoding/json"
 	// "github.com/golang/glog"
@@ -13,14 +11,15 @@ import (
 
 func Docker_stat(url string, num int){
 	root, err := client.NewClient(url)
-	check(err)
+	check_error(err)
 	
 	query := info.ContainerInfoRequest{
 		NumStats: num,
 	}
 
+	check_dir()
 	file, err := os.Create("stats/docker_stat.txt")
-	check(err)
+	check_error(err)
 	
 	defer file.Close()
 
@@ -53,14 +52,15 @@ func Docker_stat(url string, num int){
 
 func Docker_cpu(url string, num int){
 	root, err := client.NewClient(url)
-	check(err)
+	check_error(err)
 	
 	query := info.ContainerInfoRequest{
 		NumStats: num,
 	}
 
+	check_dir()
 	file, err := os.Create("stats/docker_cpu.dat")
-	check(err)
+	check_error(err)
 	defer file.Close()
 
 	docker_info, _ := root.AllDockerContainers(&query)
@@ -98,14 +98,15 @@ func Docker_cpu(url string, num int){
 
 func Docker_memory(url string, num int){
 	root, err := client.NewClient(url)
-	check(err)
+	check_error(err)
 	
 	query := info.ContainerInfoRequest{
 		NumStats: num,
 	}
 
+	check_dir()
 	file, err := os.Create("stats/docker_memory.dat")
-	check(err)
+	check_error(err)
 	defer file.Close()
 
 	docker_info, _ := root.AllDockerContainers(&query)
@@ -123,13 +124,3 @@ func Docker_memory(url string, num int){
 	}
 
 }	
-
-
-// demonstrates how to use event clients
-// func main() {
-// 	flag.Parse()
-// 	fmt.Println()
-// 	docker_stat("http://192.168.99.14:8080/", 5)
-// 	docker_cpu("http://192.168.99.14:8080/", 5)
-// 	docker_memory("http://192.168.99.14:8080/", 5)
-// }
