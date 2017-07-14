@@ -1,6 +1,19 @@
 # cAdvisor-API
 Metrics of docker swarm by using google cAdvisor API
 
+## Install
+System should have **go** installed.
+
+To use as a go package, install this package by - 
+    
+    go get github.com/swapnil96/cAdvisor-API
+
+This will make the package available for use.Then import this package by - 
+
+    import "github.com/swapnil96/cAdvisor-API/utils"
+
+Then you are ready to go !!
+
 ## Structure of the Repo
 **UTILS** folder has the scripts for polling metrics 
 
