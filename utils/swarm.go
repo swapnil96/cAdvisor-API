@@ -5,7 +5,7 @@ import "os/exec"
 func Swarm() {
 	cmd := exec.Command("sh", "-c", "docker node ls")
 	stdoutStderr, err := cmd.CombinedOutput()
-	check(err)
+	check_error(err)
 	count := 0
 	flag := 0
 	var ids [10]string
@@ -32,7 +32,7 @@ func Swarm() {
 		if node != "" {
 			cmd = exec.Command("sh", "-c", "docker inspect --format='{{.Status.Addr}}' " + node)
 			stdoutStderr, err := cmd.CombinedOutput()
-			check(err)
+			check_error(err)
 			Host_cpu("http://" + string(stdoutStderr)[:len(stdoutStderr)-1] + ":8080/", "", 11)
 		}
 	}
