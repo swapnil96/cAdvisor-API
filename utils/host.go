@@ -191,7 +191,7 @@ func Host_spec(url string){
 	check_error(err)
 	
 	check_dir()
-	file, err := os.Create("stats/host_spec.txt")
+	file, err := os.Create("stats/host_spec_" + url[7:len(url)-7] + ".txt")
 	check_error(err)
 	
 	defer file.Close()
@@ -211,7 +211,7 @@ func Host_stat(url string, link string, num int){
 	}
 
 	check_dir()
-	file, err := os.Create("stats/host_stat.txt")
+	file, err := os.Create("stats/host_stat_" + url[7:len(url)-7] + ".txt")
 	check_error(err)
 	defer file.Close()
 
@@ -245,7 +245,7 @@ func Host_cpu(url string, link string, num int){
 	}
 
 	check_dir()
-	file, err := os.Create("stats/host_cpu.dat")
+	file, err := os.Create("stats/host_cpu_" + url[7:len(url)-7] + ".dat")
 	check_error(err)
 	defer file.Close()
 
@@ -287,7 +287,7 @@ func Host_memory(url string, link string, num int){
 	}
 
 	check_dir()
-	file, err := os.Create("stats/host_memory.dat")
+	file, err := os.Create("stats/host_memory_" + url[7:len(url)-7] + ".dat")
 	check_error(err)
 	defer file.Close()
 
