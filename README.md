@@ -28,10 +28,13 @@ Then you are ready to go !!
 3) **Host_cpu** function gives cpu usage statistics in machine readable format.
 4) **Host_memory** function gives memory usage statistics in machine readable format.
 
-**docker.go** gives the metrics of all docker containers
+**docker.go** gives the metrics of all docker containers.
 1) **Docker_stat** function gives the statistics of all docker containers in a human readable form.
 2) **Docker_cpu** function gives cpu usage of all docker containers in machine readable format.
 3) **Dost_memory** function gives memory usage of all docker containers in machine readable format.
+
+**swarm.go** gives the metrics for all the nodes in the swarm.
+1) **Swarm** function gives the statistics of all the nodes that are in the swarm.
 
 ## Usage
 **main.go** has sample way how to use the scripts in the utils folder
