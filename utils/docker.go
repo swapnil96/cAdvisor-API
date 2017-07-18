@@ -18,7 +18,7 @@ func Docker_stat(url string, num int){
 	}
 
 	check_dir()
-	file, err := os.Create("stats/docker_stat.txt")
+	file, err := os.Create("stats/docker_stat" + url[7:] + ".txt")
 	check_error(err)
 	
 	defer file.Close()
@@ -59,7 +59,7 @@ func Docker_cpu(url string, num int){
 	}
 
 	check_dir()
-	file, err := os.Create("stats/docker_cpu.dat")
+	file, err := os.Create("stats/docker_cpu" + url[7:] + ".dat")
 	check_error(err)
 	defer file.Close()
 
@@ -105,7 +105,7 @@ func Docker_memory(url string, num int){
 	}
 
 	check_dir()
-	file, err := os.Create("stats/docker_memory.dat")
+	file, err := os.Create("stats/docker_memory" + url[7:] + ".dat")
 	check_error(err)
 	defer file.Close()
 
