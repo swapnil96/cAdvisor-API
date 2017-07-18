@@ -1,6 +1,10 @@
 # cAdvisor-API
 Metrics of docker swarm by using google cAdvisor API
 
+To find CPU usage % the following formula is used 
+
+    Usage % = (Used CPU Time (in nanoseconds) for the interval) /(interval (in nano secs) * num cores)
+
 ## Install
 System should have **go** installed.
 
